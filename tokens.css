@@ -1,0 +1,52 @@
+/**
+ * KodNest Premium Build System — Design Tokens
+ * Maximum 4 colors. Spacing scale only. No gradients, glassmorphism, neon.
+ * Calm, intentional, coherent, confident.
+ */
+
+:root {
+  /* ─── Color System (4 only: background, text, accent, muted) ─── */
+  --kn-background: #F7F6F3;
+  --kn-text: #111111;
+  --kn-accent: #8B0000;
+  /* Muted: success (green) and warning (amber) — one family, no 5th color */
+  --kn-success: #4A6B4A;
+  --kn-warning: #8B7355;
+
+  /* Derived only from the 4 above — no new hues */
+  --kn-text-muted: rgba(17, 17, 17, 0.7);
+  --kn-border: rgba(17, 17, 17, 0.12);
+  --kn-border-focus: var(--kn-accent);
+  --kn-accent-hover: #6d0000;
+}
+
+:root {
+  /* ─── Typography ─── */
+  --kn-font-serif: "Source Serif 4", Georgia, "Times New Roman", serif;
+  --kn-font-sans: Inter, system-ui, -apple-system, sans-serif;
+
+  --kn-text-size-sm: 14px;
+  --kn-text-size: 16px;
+  --kn-text-size-lg: 18px;
+  --kn-heading-size: 24px;
+  --kn-heading-size-lg: 32px;
+  --kn-heading-size-xl: 40px;
+
+  --kn-line-height: 1.65;
+  --kn-line-height-loose: 1.8;
+  --kn-text-measure: 720px;
+
+  /* ─── Spacing (8, 16, 24, 40, 64 only — never random values) ─── */
+  --kn-space-1: 8px;
+  --kn-space-2: 16px;
+  --kn-space-3: 24px;
+  --kn-space-4: 40px;
+  --kn-space-5: 64px;
+
+  /* ─── Layout & Interaction ─── */
+  --kn-workspace-width: 70%;
+  --kn-panel-width: 30%;
+  --kn-radius: 6px;
+  /* 150–200ms ease-in-out only; no bounce, no parallax */
+  --kn-transition: 180ms ease-in-out;
+}
